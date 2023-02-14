@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+
+    padding: 4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+    align-items: center;
+    
+}
+
+
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #848484;
+}
+
+a:nth-last-child(4) {
+    font-weight: 700;
+    color: #731F07;
+}
+
+#btn-header {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background: #a5410F;
+    color: white;;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    padding:.4rem;
+    
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+
+aside {
+    flex-basis: 45%;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #506269;
+    margin-left: 2rem;
+    line-height: 1.2em;
+}
+
+article {
+    font-family: 'Inter', sans-serif;
+    color: #848484;
+    margin-left: 2rem;
+    margin-bottom: 3em;
+   
+}
+
+#btn-main {
+    width: 492.84px;
+    height: 85.57px;
+    margin: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #a5410F;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    justify-content: center;
+
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#btn-main:hover {
+   color: rgb(0, 0, 0);
+}
+
+#btn-header:hover {
+    color: rgb(0, 0, 0);
+}
+
+footer {
+
+    margin-top: 2%;
+    height: 4rem;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-links h3 {
+    line-height: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #506269;
+}
+
+@media screen and (max-width: 700px) {
+    #title img {
+        width: 100%;
+    }
+
+    nav a {
+        display: none;
+    }
+    
+    #btn-header {
+        padding: 25%;
+        color: white !important;
+    }
+
+    .container {
+        display: block;
+        width: 100vw;
+    }
+
+    #left {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #left h2 {
+        font-size: 2.5rem;
+        width: 100vw;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    #btn-main {
+        width: 100vw;
+        
+    }
+
+    main img {
+   
+        margin-top: 10%;
+        width: 100vw;
+    }
+
+    footer {
+        width: 100vw;
+        display: flex;
+
+    }
+}
